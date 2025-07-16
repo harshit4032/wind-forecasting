@@ -1,0 +1,89 @@
+# --- Python bytecode and cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+.env
+.env.*
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints
+*.nbconvert.ipynb
+
+# --- Logs and coverage ---
+*.log
+.coverage
+.cache/
+*.cover
+coverage.xml
+*.py,cover
+htmlcov/
+.pytest_cache/
+
+# --- Type checking ---
+.mypy_cache/
+.pyright/
+.dmypy.json
+dmypy.json
+
+# --- Packaging/build ---
+build/
+dist/
+*.egg-info/
+*.spec
+
+# --- Pip and wheels ---
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Local databases ---
+*.sqlite3
+*.db
+
+# --- Docker ---
+*.pid
+*.seed
+*.pid.lock
+
+# --- MLflow ---
+mlruns/
+mlruns.db
+
+# --- Model weights/artifacts ---
+*.h5
+*.hdf5
+*.keras
+*.ckpt
+*.pkl
+*.pt
+*.pth
+*.joblib
+*.sav
+*.tflite
+*.onnx
+*.pb
+*.npy
+*.npz
+
+# --- TensorBoard ---
+events.out.tfevents.*
+
+# --- DVC artifacts (allow tracking through DVC, not Git) ---
+data/
+datasets/
+models/
+checkpoints/
+outputs/
+runs/
+experiments/
+artifacts/
+/Data
