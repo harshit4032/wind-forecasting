@@ -16,7 +16,7 @@ env/
 .DS_Store
 
 # --- Jupyter Notebook ---
-.ipynb_checkpoints
+.ipynb_checkpoints/
 *.nbconvert.ipynb
 
 # --- Logs and coverage ---
@@ -78,12 +78,24 @@ mlruns.db
 events.out.tfevents.*
 
 # --- DVC artifacts (allow tracking through DVC, not Git) ---
-data/
-datasets/
-models/
-checkpoints/
-outputs/
-runs/
-experiments/
-artifacts/
-/Data
+# Do NOT ignore folders that contain notebooks
+# So don't ignore data/ or Data/ if they contain .ipynb files you want to track
+
+# Instead, ignore only large files or file types, not entire folders
+data/**/*.csv
+data/**/*.npy
+data/**/*.npz
+
+# models/**
+Models/weights**
+checkpoints/**
+outputs/**
+runs/**
+experiments/**
+artifacts/**
+
+# If you still want to track some notebooks under /Data or /outputs,
+# then exclude the folder but re-include .ipynb files like this:
+!data/**/*.ipynb
+!Data/**/*.ipynb
+!outputs/**/*.ipynb

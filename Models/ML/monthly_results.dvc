@@ -1,0 +1,6 @@
+outs:
+- md5: 4355f705fa3bd08cd10a29dcabd1277a.dir
+  size: 16234845
+  nfiles: 97
+  hash: md5
+  path: monthly_results
