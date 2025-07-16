@@ -87,7 +87,7 @@ data/**/*.npy
 data/**/*.npz
 
 # models/**
-Models/weights**
+# Models/weights**
 checkpoints/**
 outputs/**
 runs/**
