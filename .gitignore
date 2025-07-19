@@ -99,3 +99,5 @@ artifacts/**
 !data/**/*.ipynb
 !Data/**/*.ipynb
 !outputs/**/*.ipynb
+/org_vs_aug.csv
+/shuffle_vs_no_shuffle.csv
